@@ -1,10 +1,13 @@
+package bit;
+
 public class BitwiseOperation {
 
     public static void main(String[] args) {
 //        System.out.println(getFirstSetBit(18));
 //        System.out.println(swapBits(2));
 //        System.out.println(maxConsecutiveOnes(5555));
-        System.out.println(isSparse(1024));
+//        System.out.println(isSparse(1024));
+        System.out.println(powerOfTwo(555));
     }
 
     public static int getFirstSetBit(int n){
@@ -53,6 +56,51 @@ public class BitwiseOperation {
         return (n & (n>>1)) == 0;
     }
 
+    public static boolean powerOfTwo(int n) {
+        if (n == 0) return false;
+        return (n & (n-1)) == 0;
+    }
 
+    public static int posOfRightMostDiffBit(int m, int n) {
+
+        if (m == n) return -1;
+        int xor = m ^ n;
+        int pos = 1;
+        while ((xor & 1) == 0) {
+            pos++;
+            xor = xor >> 1;
+        }
+        return pos;
+
+    }
+
+    public static int countBitsFlip(int a, int b){
+
+        int xor = a ^ b;
+        int count = 0;
+        while(xor > 0) {
+            xor &= (xor-1);
+            count++;
+        }
+        return count;
+
+    }
+
+    public static int greyConverter(int n) {
+
+        // Your code here
+        return n ^ (n >> 1);
+    }
+
+    public static int grayToBinary(int n) {
+
+        int res = n;
+        while(n > 0) {
+            n >>= 1;
+            res ^= n;
+        }
+        return res;
+
+    }
 
 }
