@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0266e850-550b-4edd-8859-159dda0f4db3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recursion/LuckyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursion/LuckyNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <recent name="ll" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DigitalRoot">
+  <component name="RunManager" selected="Application.LuckyNumber">
     <configuration name="DigitalRoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="recursion.DigitalRoot" />
       <module name="Practice" />
@@ -69,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumAND" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bit.MaximumAND" />
+    <configuration name="LuckyNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursion.LuckyNumber" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bit.*" />
+          <option name="PATTERN" value="recursion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LuckyNumber" />
         <item itemvalue="Application.DigitalRoot" />
         <item itemvalue="Application.PowerSet" />
         <item itemvalue="Application.NthFibonacci" />
         <item itemvalue="Application.PowerOfNumber" />
-        <item itemvalue="Application.MaximumAND" />
       </list>
     </recent_temporary>
   </component>
