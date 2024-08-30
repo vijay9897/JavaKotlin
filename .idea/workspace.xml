@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0266e850-550b-4edd-8859-159dda0f4db3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/recursion/LuckyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/recursion/LuckyNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +55,9 @@
       <recent name="ll" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LuckyNumber">
-    <configuration name="DigitalRoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.DigitalRoot" />
+  <component name="RunManager" selected="Application.PowerOfNumbers">
+    <configuration name="JosephusProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursion.JosephusProblem" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NthFibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.NthFibonacci" />
+    <configuration name="PhoneDigitCombinations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursion.PhoneDigitCombinations" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PowerOfNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.PowerOfNumber" />
+    <configuration name="PowerOfNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursion.PowerOfNumbers" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PowerSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="recursion.PowerSet" />
+    <configuration name="TowerOfHanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="recursion.TowerOfHanoi" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PowerOfNumbers" />
+        <item itemvalue="Application.JosephusProblem" />
+        <item itemvalue="Application.TowerOfHanoi" />
+        <item itemvalue="Application.PhoneDigitCombinations" />
         <item itemvalue="Application.LuckyNumber" />
-        <item itemvalue="Application.DigitalRoot" />
-        <item itemvalue="Application.PowerSet" />
-        <item itemvalue="Application.NthFibonacci" />
-        <item itemvalue="Application.PowerOfNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +153,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/recursion/PowerOfNumbers.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
