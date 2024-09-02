@@ -16,10 +16,18 @@ public class LeaderElement {
         int lastLeader = arr[arr.length - 1];
         result.add(lastLeader);
         for (int i = arr.length - 2; i >= 0; i--) {
-            if (arr[i] > lastLeader) {
+            if (arr[i] >= lastLeader) {
                 lastLeader = arr[i];
                 result.add(lastLeader);
             }
+        }
+        int start = 0, end = result.size() - 1;
+        while(start < end) {
+            int temp = result.get(start);
+            result.set(start, result.get(end));
+            result.set(end, temp);
+            start++;
+            end--;
         }
         return result;
     }

@@ -7,9 +7,10 @@ public class MaximumDifference {
     }
 
     public static int maximumDifference(int arr[]) {
-        int maxDiff = arr[1] - arr[0];
-        for (int i = 2; i < arr.length; i++) {
-
-        }
+//        int maxDiff = arr[1] - arr[0];
+//        for (int i = 2; i < arr.length; i++) {
+//
+//        }
+        return 0;
     }
 }
