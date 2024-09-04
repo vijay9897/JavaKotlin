@@ -3,7 +3,7 @@ package array;
 public class AlternativeArrangement {
 
     public static void main(String[] args) {
-        long arr[] = new long[]{1,2,3,4,5,6};
+        long arr[] = new long[]{1, 0};
         rearrange(arr, arr.length);
         for (long i: arr) {
             System.out.print(i + ", ");
@@ -12,15 +12,20 @@ public class AlternativeArrangement {
 
     public static void rearrange(long arr[], int n){
 
-        long temp = arr[0];
+        int maxIdx = n-1, minIdx = 0;
+        long max = (arr[0] < arr[n-1]) ? arr[n-1] + 1 : arr[0] + 1;
         for (int i = 0; i < n; i++) {
-            long temp1 = arr[i];
-            if ((i & 1) != 0) {
-                arr[i] = temp;
+            if ((i & 1) == 0) {
+                arr[i] = arr[i] + (arr[maxIdx] % max) * max;
+                maxIdx--;
             } else {
-                arr[i] = arr[n-1-(i/2)];
+                arr[i] = arr[i] + (arr[minIdx] % max) * max;
+                minIdx++;
             }
-            temp = temp1;
+        }
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = arr[i] / max;
         }
 
     }

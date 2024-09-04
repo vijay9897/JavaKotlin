@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0266e850-550b-4edd-8859-159dda0f4db3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/array/AlternativeArrangement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/LeaderElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/LeaderElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/MaximumDifference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaximumDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/AlternativeArrangement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/AlternativeArrangement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +56,9 @@
       <recent name="ll" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LeaderElement">
-    <configuration name="GroupReverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.GroupReverse" />
+  <component name="RunManager" selected="Application.LongestEvenOddSubArray">
+    <configuration name="FrequencyInSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.FrequencyInSorted" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -72,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InPlaceTransformation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.InPlaceTransformation" />
+    <configuration name="LongestEvenOddSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.LongestEvenOddSubArray" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaderElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.LeaderElement" />
+    <configuration name="MaximumSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.MaximumSubArray" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortedRotatedArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.SortedRotatedArray" />
+    <configuration name="StockBuyAndSell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.StockBuyAndSell" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -111,8 +109,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoMaximum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.TwoMaximum" />
+    <configuration name="TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.TrappingRainWater" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -126,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LeaderElement" />
-        <item itemvalue="Application.InPlaceTransformation" />
-        <item itemvalue="Application.GroupReverse" />
-        <item itemvalue="Application.SortedRotatedArray" />
-        <item itemvalue="Application.TwoMaximum" />
+        <item itemvalue="Application.LongestEvenOddSubArray" />
+        <item itemvalue="Application.MaximumSubArray" />
+        <item itemvalue="Application.TrappingRainWater" />
+        <item itemvalue="Application.StockBuyAndSell" />
+        <item itemvalue="Application.FrequencyInSorted" />
       </list>
     </recent_temporary>
   </component>
