@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0266e850-550b-4edd-8859-159dda0f4db3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/AlternativeArrangement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/AlternativeArrangement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/MaximumSumCircularArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaximumSumCircularArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +56,9 @@
       <recent name="ll" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestEvenOddSubArray">
-    <configuration name="FrequencyInSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.FrequencyInSorted" />
+  <component name="RunManager" selected="Application.MajorityElement">
+    <configuration name="LongestEvenOddSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.LongestEvenOddSubArray" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongestEvenOddSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.LongestEvenOddSubArray" />
+    <configuration name="MajorityElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.MajorityElement" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +96,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StockBuyAndSell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.StockBuyAndSell" />
+    <configuration name="MaximumSumCircularArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.MaximumSumCircularArray" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MajorityElement" />
+        <item itemvalue="Application.MaximumSumCircularArray" />
         <item itemvalue="Application.LongestEvenOddSubArray" />
         <item itemvalue="Application.MaximumSubArray" />
         <item itemvalue="Application.TrappingRainWater" />
-        <item itemvalue="Application.StockBuyAndSell" />
-        <item itemvalue="Application.FrequencyInSorted" />
       </list>
     </recent_temporary>
   </component>
