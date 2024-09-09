@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0266e850-550b-4edd-8859-159dda0f4db3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/MaximumSumCircularArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaximumSumCircularArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/MaximumIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaximumIndexDifference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaximumSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array/StockBuyAndSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/StockBuyAndSell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +58,9 @@
       <recent name="ll" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MajorityElement">
-    <configuration name="LongestEvenOddSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.LongestEvenOddSubArray" />
+  <component name="RunManager" selected="Application.MaximumIndexDifference">
+    <configuration name="BettingAmount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.BettingAmount" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +72,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MajorityElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.MajorityElement" />
+    <configuration name="EquilibriumPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.EquilibriumPoint" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumSubArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.MaximumSubArray" />
+    <configuration name="MaximumIndexDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.MaximumIndexDifference" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumSumCircularArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.MaximumSumCircularArray" />
+    <configuration name="ReducingIncreasingPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.ReducingIncreasingPattern" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +111,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrappingRainWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.TrappingRainWater" />
+    <configuration name="StrongestNeighbour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.StrongestNeighbour" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -124,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MajorityElement" />
-        <item itemvalue="Application.MaximumSumCircularArray" />
-        <item itemvalue="Application.LongestEvenOddSubArray" />
-        <item itemvalue="Application.MaximumSubArray" />
-        <item itemvalue="Application.TrappingRainWater" />
+        <item itemvalue="Application.MaximumIndexDifference" />
+        <item itemvalue="Application.StrongestNeighbour" />
+        <item itemvalue="Application.EquilibriumPoint" />
+        <item itemvalue="Application.BettingAmount" />
+        <item itemvalue="Application.ReducingIncreasingPattern" />
       </list>
     </recent_temporary>
   </component>
@@ -154,6 +156,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/array/BettingAmount.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

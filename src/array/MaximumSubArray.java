@@ -3,8 +3,8 @@ package array;
 public class MaximumSubArray {
 
     public static void main(String[] args) {
-        System.out.println(maximumSumInSubArray(new int[]{-2, -3, 4, -1, -2, 1, 5, -3}));
-        maximumSumSubArray(new int[]{-2, -3, 4, -1, -2, 1, 5, -3});
+        System.out.println(maximumSumInSubArray(new int[]{-1, -2, -3, -4}));
+//        maximumSumSubArray(new int[]{-2, -3, 4, -1, -2, 1, 5, -3});
     }
 
     public static int maximumSumInSubArray(int[] arr) {
