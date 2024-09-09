@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0266e850-550b-4edd-8859-159dda0f4db3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/MaximumIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaximumIndexDifference.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/MaximumSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/MaximumSubArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/array/StockBuyAndSell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/array/StockBuyAndSell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PeakElementInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/search/PeakElementInArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <recent name="ll" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaximumIndexDifference">
+  <component name="RunManager" selected="Application.SquareRoot">
     <configuration name="BettingAmount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="array.BettingAmount" />
       <module name="Practice" />
@@ -98,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReducingIncreasingPattern" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.ReducingIncreasingPattern" />
+    <configuration name="SquareRoot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="search.SquareRoot" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.*" />
+          <option name="PATTERN" value="search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SquareRoot" />
         <item itemvalue="Application.MaximumIndexDifference" />
         <item itemvalue="Application.StrongestNeighbour" />
         <item itemvalue="Application.EquilibriumPoint" />
         <item itemvalue="Application.BettingAmount" />
-        <item itemvalue="Application.ReducingIncreasingPattern" />
       </list>
     </recent_temporary>
   </component>
