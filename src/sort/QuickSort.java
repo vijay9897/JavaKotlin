@@ -3,7 +3,7 @@ package sort;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{3, 2, 1, 97, 9798, 78};
+        int[] arr = new int[]{4, 1, 3, 9, 7};
         quickSort(arr, 0, arr.length - 1);
         for (int i: arr) {
             System.out.print(i + ", ");
@@ -15,7 +15,8 @@ public class QuickSort {
 //            int point = naivePartition(arr, start, end);
 //            int point = lomutoPartition(arr, start, end);
             int point = hoarePartition(arr, start, end);
-            quickSort(arr, start, point-1);
+//            quickSort(arr, start, point-1);
+            quickSort(arr, start, point); // it should be point in case of hoare partition
             quickSort(arr, point+1, end);
         }
     }

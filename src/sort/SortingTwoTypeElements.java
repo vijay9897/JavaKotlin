@@ -3,7 +3,7 @@ package sort;
 public class SortingTwoTypeElements {
 
     public static void main(String[] args) {
-        int[] arr = new int[]{0, 1, 1, 0, 1, 0, 1};
+        int[] arr = new int[]{1, 1};
 //        sortTwoTypeElementArrayPositiveNegative(arr);
 //        sortTwoTypeElementArrayEvenOdd(arr);
         sortTwoTypeElementArrayBinary(arr);
@@ -60,10 +60,10 @@ public class SortingTwoTypeElements {
         while (true) {
             do {
                 i++;
-            } while ((arr[i] & 1) == 0);
+            } while (i < arr.length && arr[i] == 0);
             do {
                 j--;
-            } while ((arr[j] & 1) == 1);
+            } while (j >= 0 && arr[j] == 1);
 
             if (i >= j) {
                 return;
