@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0266e850-550b-4edd-8859-159dda0f4db3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sort/NumberOfTriangles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sort/PowerPairInArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sort/SortByAbsoluteDifference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sort/StringSorting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sort/SortingTwoTypeElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sort/SortingTwoTypeElements.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +55,9 @@
       <recent name="ll" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TripletSum">
-    <configuration name="NumberOfTriangles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.NumberOfTriangles" />
+  <component name="RunManager" selected="Application.MergeWithoutSpace">
+    <configuration name="CloserToSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.CloserToSort" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -75,8 +69,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortByAbsoluteDifference" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.SortByAbsoluteDifference" />
+    <configuration name="CountingSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.CountingSort" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -88,8 +82,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTwoTypeElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.SortingTwoTypeElements" />
+    <configuration name="MergeWithoutSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.MergeWithoutSpace" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +95,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.StringSorting" />
+    <configuration name="PowerPairInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.PowerPairInArray" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +108,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TripletSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sort.TripletSum" />
+    <configuration name="ZeroSumTriplet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.ZeroSumTriplet" />
       <module name="Practice" />
       <extension name="coverage">
         <pattern>
@@ -129,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TripletSum" />
-        <item itemvalue="Application.SortByAbsoluteDifference" />
-        <item itemvalue="Application.NumberOfTriangles" />
-        <item itemvalue="Application.StringSorting" />
-        <item itemvalue="Application.SortingTwoTypeElements" />
+        <item itemvalue="Application.MergeWithoutSpace" />
+        <item itemvalue="Application.ZeroSumTriplet" />
+        <item itemvalue="Application.CloserToSort" />
+        <item itemvalue="Application.PowerPairInArray" />
+        <item itemvalue="Application.CountingSort" />
       </list>
     </recent_temporary>
   </component>
@@ -167,11 +161,6 @@
           <url>file://$PROJECT_DIR$/src/array/BettingAmount.java</url>
           <line>16</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sort/QuickSort.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
