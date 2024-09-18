@@ -2,69 +2,89 @@ package trie;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class CamelCasePattern {
 
     public static void main(String[] args) {
         String[] dict = {"Hi", "Hello", "HelloWorld", "HiTech", "HiGeek", "HiTechWorld", "HiTechCity", "HiTechLab"};
-        findAllWords(dict, "HT");
+        findAllWords(dict, "H");
+        //Hello Hi HiGeek HiTech HiTechCity HiTechLab HiTechWorld HelloWorld
     }
 
     static final int ALPHABET_SIZE = 26;
+    static TrieNode root;
 
     static class TrieNode {
-        TrieNode[] smallCase = new TrieNode[ALPHABET_SIZE];
-        TrieNode[] capitalCase = new TrieNode[ALPHABET_SIZE];
+        TrieNode[] children = new TrieNode[ALPHABET_SIZE];
+        boolean isEnd;
+        List<String> word = new ArrayList<>();
     }
 
     static void findAllWords(String[] dict, String pattern) {
-        TrieNode root = new TrieNode();
-        ArrayList<String> result = new ArrayList<>();
+        root = new TrieNode();
         for (int i = 0; i < dict.length; i++) {
-            if (insert(root, dict[i], pattern)) {
-                result.add(dict[i]);
-            }
+            insert(dict[i]);
         }
-        if (result.isEmpty()) {
+        if (!search(pattern)) {
             System.out.print("No match found");
-        } else {
-            Collections.sort(result);
-            for (String s: result) {
-                System.out.print(s + " ");
-            }
         }
     }
 
-    static boolean insert(TrieNode root, String key, String pattern) {
+    static void insert(String key) {
+        if (root == null) {
+            return;
+        }
+        TrieNode currNode = root;
+        for (int i = 0; i < key.length(); i++) {
+            if (Character.isLowerCase(key.charAt(i))) {
+                continue;
+            }
+            int index = key.charAt(i) - 'A';
+            if (currNode.children[index] == null) {
+                currNode.children[index] = new TrieNode();
+            }
+            currNode = currNode.children[index];
+        }
+        currNode.isEnd = true;
+
+        currNode.word.add(key);
+
+    }
+
+    static boolean search(String pattern) {
         if (root == null) {
             return false;
         }
 
-        int patternIndex = 0;
         TrieNode currNode = root;
-        for (int i = 0; i < key.length(); i++) {
-            char ch = key.charAt(i);
-            if (isCapitalCase(ch)) {
-                if (patternIndex < pattern.length() && pattern.charAt(patternIndex) == ch)
-                    patternIndex++;
-                int index = ch - 'A';
-                if (currNode.capitalCase[index] == null) {
-                    currNode.capitalCase[index] = new TrieNode();
-                }
-                currNode = currNode.capitalCase[index];
-            } else {
-                int index = ch - 'a';
-                if (currNode.smallCase[index] == null) {
-                    currNode.smallCase[index] = new TrieNode();
-                }
-                currNode = currNode.smallCase[index];
+        for (int i = 0; i < pattern.length(); i++) {
+            int index = pattern.charAt(i) - 'A';
+            if (currNode.children[index] == null) {
+                return false;
             }
+            currNode = currNode.children[index];
         }
-        return patternIndex == pattern.length();
+
+        printWords(currNode);
+        return true;
     }
 
-    static boolean isCapitalCase(char ch) {
-        return ch >= 65 && ch <= 90;
+    static void printWords(TrieNode node) {
+        if (node.isEnd) {
+            Collections.sort(node.word);
+            for (String w: node.word) {
+                System.out.print(w + " ");
+            }
+        }
+
+        for (int i = 0; i < ALPHABET_SIZE; i++) {
+            TrieNode child = node.children[i];
+            if (child != null) {
+                Collections.sort(child.word);
+                printWords(child);
+            }
+        }
     }
 
 }
