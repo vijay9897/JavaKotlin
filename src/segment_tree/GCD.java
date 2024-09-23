@@ -87,18 +87,19 @@ public class GCD {
         updateValueUtil(st, arr, 0, n-1, 0, index, new_val);
     }
 
-    public int updateValueUtil(int[] st, int[] arr, int ss, int se, int si, int index, int new_value) {
+    public void updateValueUtil(int[] st, int[] arr, int ss, int se, int si, int index, int new_value) {
         if (index < ss || index > se) {
-            return 0;
+            return;
         }
         if (ss == se) {
-            st[si] = arr[ss];
-            return st[si];
+            st[si] = new_value;
+            return;
         }
 
         int mid = getMid(ss, se);
-        st[si] = getGCD(updateValueUtil(st, arr, ss, mid, 2 * si + 1, index, new_value), updateValueUtil(st, arr, mid+1, se, 2 * si + 2, index, new_value));
-        return st[si];
+        updateValueUtil(st, arr, ss, mid, 2 * si + 1, index, new_value);
+        updateValueUtil(st, arr, mid+1, se, 2 * si + 2, index, new_value);
+        st[si] = getGCD(st[2 * si + 1], st[2 * si + 2]);
     }
 
 }
