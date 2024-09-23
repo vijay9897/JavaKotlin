@@ -14,7 +14,8 @@ public class LargestSumContiguousSubArray {
         }
         LargestSumContiguousSubArray cls = new LargestSumContiguousSubArray();
         cls.build(arr, 0, arr.length-1, 0);
-        cls.printTree();
+//        cls.printTree();
+        System.out.println(query(arr, arr.length, 5, 8));
     }
 
     public void printTree() {
@@ -45,7 +46,39 @@ public class LargestSumContiguousSubArray {
             tree[index].sum = left.sum + right.sum;
             tree[index].prefixSum = Math.max(left.prefixSum, left.sum + right.prefixSum);
             tree[index].suffixSum = Math.max(right.suffixSum, right.sum + left.suffixSum);
-            tree[index].maxSum = Math.max(tree[index].prefixSum, Math.max(tree[index].suffixSum, Math.max(left.maxSum, Math.max(right.maxSum, left.suffixSum + right.prefixSum))));
+            tree[index].maxSum = Math.max(
+                    tree[index].prefixSum,
+                    Math.max(tree[index].suffixSum,
+                            Math.max(left.maxSum,
+                                    Math.max(right.maxSum,
+                                            left.suffixSum + right.prefixSum
+                                    )
+                            )
+                    )
+            );
         }
+    }
+
+    public static int query(int arr[], int n, int left, int right) {
+
+        return queryUtil(0, n-1, left, right, 0);
+
+    }
+
+    public static int queryUtil(int start, int end, int left, int right, int index) {
+        if (start > end || start > right || end < left) {
+            return Integer.MIN_VALUE;
+        }
+        if (start == end) {
+            return tree[index].maxSum;
+        }
+        if (left <= start && right >= end) {
+            return tree[index].maxSum;
+        }
+
+        int mid = getMid(start, end);
+        int leftMax = queryUtil(start, mid, left, right, 2 * index + 1);
+        int rightMax = queryUtil(mid+1, end, left, right, 2 * index + 2);
+        return Math.max(leftMax, rightMax);
     }
 }
