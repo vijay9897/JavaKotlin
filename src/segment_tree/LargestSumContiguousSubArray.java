@@ -14,8 +14,10 @@ public class LargestSumContiguousSubArray {
         }
         LargestSumContiguousSubArray cls = new LargestSumContiguousSubArray();
         cls.build(arr, 0, arr.length-1, 0);
-//        cls.printTree();
         System.out.println(query(arr, arr.length, 5, 8));
+        update(arr, arr.length, 1, 11);
+//        cls.printTree();
+        System.out.println(query(arr, arr.length, 1, 3));
     }
 
     public void printTree() {
@@ -59,26 +61,112 @@ public class LargestSumContiguousSubArray {
         }
     }
 
-    public static int query(int arr[], int n, int left, int right) {
+    public static int query(int[] arr, int n, int left, int right) {
 
-        return queryUtil(0, n-1, left, right, 0);
+        return queryUtil(0, n-1, left-1, right-1, 0).maxSum;
 
     }
 
-    public static int queryUtil(int start, int end, int left, int right, int index) {
-        if (start > end || start > right || end < left) {
-            return Integer.MIN_VALUE;
-        }
-        if (start == end) {
-            return tree[index].maxSum;
-        }
-        if (left <= start && right >= end) {
-            return tree[index].maxSum;
+    public static Node queryUtil(int index, int low, int high, int l, int r) {
+        Node result = new Node();
+        result.sum = result.prefixSum = result.suffixSum
+                = result.maxSum = Integer.MIN_VALUE;
+
+        if (r < low || high < l) {
+            return result;
         }
 
-        int mid = getMid(start, end);
-        int leftMax = queryUtil(start, mid, left, right, 2 * index + 1);
-        int rightMax = queryUtil(mid+1, end, left, right, 2 * index + 2);
-        return Math.max(leftMax, rightMax);
+        if (l <= low && high <= r) {
+            return tree[index];
+        }
+
+        int mid = (low + high) / 2;
+
+        if (l > mid) {
+            return queryUtil(2 * index + 2, mid + 1, high,
+                    l, r);
+        }
+        if (r <= mid) {
+            return queryUtil(2 * index + 1, low, mid, l,
+                    r);
+        }
+
+        Node left
+                = queryUtil(2 * index + 1, low, mid, l, r);
+        Node right = queryUtil( 2 * index + 2, mid + 1,
+                high, l, r);
+        result.sum = left.sum + right.sum;
+        result.prefixSum = Math.max(
+                left.prefixSum, left.sum + right.prefixSum);
+
+        result.suffixSum = Math.max(
+                right.suffixSum, right.sum + left.suffixSum);
+        result.maxSum = Math.max(
+                result.prefixSum,
+                Math.max(
+                        result.suffixSum,
+                        Math.max(left.maxSum,
+                                Math.max(right.maxSum,
+                                        left.suffixSum
+                                                + right.prefixSum))));
+
+        return result;
+
     }
+
+    static void update(int[] arr, int n, int index, int value) {
+            if (index-1 < 0 || index-1 > n-1) {
+                return;
+            }
+            updateUtil(0, 0, n-1, index-1, value);
+    }
+
+    public static void updateUtil(int index, int low, int high, int idx, int value) {
+        if (low == high) {
+            tree[index].sum = value;
+            tree[index].prefixSum = value;
+            tree[index].suffixSum = value;
+            tree[index].maxSum = value;
+        }
+        else {
+            int mid = (low + high) / 2;
+
+            if (idx <= mid) {
+                updateUtil(2 * index + 1, low, mid, idx,
+                        value);
+            } else {
+                updateUtil(2 * index + 2, mid + 1, high,
+                        idx, value);
+            }
+            tree[index].sum = tree[2 * index + 1].sum
+                    + tree[2 * index + 2].sum;
+
+            tree[index].prefixSum = Math.max(
+                    tree[2 * index + 1].prefixSum,
+                    tree[2 * index + 1].sum
+                            + tree[2 * index + 2].prefixSum);
+
+            tree[index].suffixSum = Math.max(
+                    tree[2 * index + 2].suffixSum,
+                    tree[2 * index + 2].sum
+                            + tree[2 * index + 1].suffixSum);
+
+            tree[index].maxSum = Math.max(
+                    tree[index].prefixSum,
+                    Math.max(
+                            tree[index].suffixSum,
+                            Math.max(
+                                    tree[2 * index + 1].maxSum,
+                                    Math.max(
+                                            tree[2 * index + 2].maxSum,
+                                            tree[2 * index + 1].suffixSum
+                                                    + tree[2 * index + 2]
+                                                    .prefixSum
+                                    )
+                            )
+                    )
+            );
+        }
+    }
+
 }
